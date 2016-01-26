@@ -1,7 +1,7 @@
 /**
  * Created by _Ikari_ on 26.01.2016.
  */
-var a = prompt("Введите римское число");
+var a = prompt("Р’РІРµРґРёС‚Рµ СЂРёРјСЃРєРѕРµ С‡РёСЃР»Рѕ");
 
 console.log(a);
 var arr = [];
@@ -51,7 +51,7 @@ for(var k = 0; k<arab.length; k++){
     console.log(k);
 }
 console.log(answ);
-alert("Ответ "+answ);
+alert("РћС‚РІРµС‚ "+answ);
 //console.log(arab);
 
 
