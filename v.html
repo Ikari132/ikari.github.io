@@ -12,11 +12,13 @@
 <script>
     alert(navigator.language);
     var lang = navigator.language;
-    if(lang=="en-US"){
+    if(lang == "en-US"||"en"){
         $(".content").append('English version');
+        alert('eng');
     }else
-    if(lang=="ru"){
+    if(lang == "ru"||"ru-RU"){
         $(".content").append('Русская версия');
+        alert('rus')
     }
 </script>
 
