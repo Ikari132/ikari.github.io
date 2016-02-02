@@ -10,15 +10,16 @@
 </div>
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script>
-    console.log(navigator.language);
-    var lang = navigator.language;
-    console.log(lang);
-    if(lang == "ru-RU"||"ru"){
-        $(".content").append('Русская версия');
-    }else
-    if(lang == "en-US"||"en"){
-        $(".content").append('English version');
-    }
+    $( document ).ready(function() {
+        var lang = navigator.language.toString();
+        console.log(lang);
+        if(lang == "ru-RU"||lang == "ru"){
+            $(".content").append('Русская версия');
+        }else
+        if(lang == "en-US"||lang =="en"){
+            $(".content").append('English version');
+        }
+    });
 </script>
 
 </body>
