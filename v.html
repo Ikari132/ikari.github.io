@@ -11,12 +11,12 @@
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script>
     $( document ).ready(function() {
-        var lang = navigator.language.toString();
-        console.log(lang);
+        var lang = navigator.language//
+
         if(lang == "ru-RU"||lang == "ru"){
             $(".content").append('Русская версия');
         }else
-        if(lang == "en-US"||lang =="en"){
+        if(lang == "en-US"||lang == "en"){
             $(".content").append('English version');
         }
     });
