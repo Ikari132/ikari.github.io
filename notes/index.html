@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Notes</title>
+	<style type="text/css">
+		@font-face {
+			font-family: 'Notes';
+			src: url('MusiQwik.ttf');
+		}
+		body{
+			font-family: sans-serif;
+		}
+		.note:hover{
+			cursor: pointer;
+		}
+		.wrapper{
+			width: 900px;
+			margin: auto;
+			overflow: hidden;
+		}
+		.song-name{
+			text-align: center;
+		}
+		.row{
+			width: 100%;
+			position: relative;
+		}
+		.note{
+			display: inline-block;
+		}
+		.cont{
+			font-family: Notes;
+			font-size: 4em;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+		}
+		
+		#background {
+		   position: absolute;
+		   top: 0;
+		   left: 0;
+		   bottom: 0;
+		   right: 0;
+		   z-index: -1;
+		   overflow: hidden;
+		}
+		 .row:after {
+			content: "==========================================================!";
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+		}
+		.row:last-child:after{
+			content: "";
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1 id="name" class="song-name"></h1>
+		<div id="cont" class="cont">
+
+			
+		</div>
+	</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
