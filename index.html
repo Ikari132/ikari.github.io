@@ -1,115 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#000000">
-    <link rel="icon"  href="favicon.ico" />
+    <link rel="icon" href="favicon.svg" />
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <title>Ikari132</title>
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+    <title>Ikari work</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-    <style>
-        .cursor {
-            opacity: 1;
-            font-weight: 100;
-            -webkit-animation: blink 0.7s infinite;
-            -moz-animation: blink 0.7s infinite;
-            -ms-animation: blink 0.7s infinite;
-            -o-animation: blink 0.7s infinite;
-             animation: blink 0.7s infinite; 
-        }
-        @-keyframes blink {
-        0% {
-            opacity: 1; }
+    <script src="styles.css"></script>
 
-        50% {
-            opacity: 0; }
-
-        100% {
-            opacity: 1; } }
-        @-webkit-keyframes blink {
-            0% {
-                opacity: 1; }
-
-            50% {
-                opacity: 0; }
-
-            100% {
-                opacity: 1; } }
-        @-moz-keyframes blink {
-            0% {
-                opacity: 1; }
-
-            50% {
-                opacity: 0; }
-
-            100% {
-                opacity: 1; } }
-        @-ms-keyframes blink {
-            0% {
-                opacity: 1; }
-
-            50% {
-                opacity: 0; }
-
-            100% {
-                opacity: 1; } }
-        @-o-keyframes blink {
-            0% {
-                opacity: 1; }
-
-            50% {
-                opacity: 0; }
-
-            100% {
-                opacity: 1; } }
-        body{
-            background: #000;
-        }
-        .content{
-            color:#0f0;
-            font-size: 2rem;
-            font-family: 'Roboto', sans-serif;
-            margin: 10% auto;
-            max-width: 600px;
-        }
-    </style>
-
-</head>
-<body>
-<!--MAIN CONTENT-->
-    <div class="content">
-        <span class="text" id="text"></span><span class="cursor">|</span>
-    </div>
-<!--END MAIN CONTENT-->
-
-<!--SCRIPTS-->
-
-    <!--<script src="bower_components\jquery\dist\jquery.min.js"></script>-->
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script>
-        $( document ).ready(function() {
-
-            function typeString(elId, str, callback) {
-                var i = 1, el = document.getElementById(elId);
-                (function f () {
-                   // el.innerHTML = str.substr(0, i++);
-                    $(el).html(str.substr(0, i++));
-                    if (i > str.length) {
-                        callback();
-                    } else {
-                        setTimeout( f,getRandomArbitrary(100, 200));
-                    }
-                })();
-            }
-
-            typeString('text', "Hi i'm Anton, front-end developer <br><br> My email: ikari808@gmail.com ", function() {
-                //callback
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter47008626 = new Ya.Metrika({
+                        id: 47008626,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true
+                    });
+                } catch (e) { }
             });
-            function getRandomArbitrary(min, max) {
-                return Math.random() * (max - min) + min;
-            }
-        });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
     </script>
+    <noscript>
+        <div>
+            <img src="https://mc.yandex.ru/watch/47008626" style="position:absolute; left:-9999px;" alt="" />
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102096121-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-102096121-2');
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="name">Anton Aksionau</div>
+        <div class="job">Front-end developer</div>
+        <div class="mail">
+            <a href="mailto:ikari808@gmail.com">ikari808@gmail.com</a>
+        </div>
+    </div>
 </body>
+
 </html>
