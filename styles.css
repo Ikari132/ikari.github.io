@@ -4,15 +4,13 @@ body {
     height: 100%;
     margin: 0;
     background: #ad5389;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom right, #ad5389, #3c1053);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom right, #ad5389, #3c1053);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: "Roboto", sans-serif;
 }
 
 a {
-    text-decoration: none;
     color: #fff;
 }
 
@@ -25,15 +23,44 @@ a {
     height: 100%;
 }
 
-.wrap div {
-    font-family: "Roboto", sans-serif;
+.wrap .name {
+    font-size: 2rem;
+    padding: 10px 0;
+    padding-top: 0;
+}
+.wrap .title {
+    font-weight: 500;
     font-size: 1.3rem;
     padding: 10px 0;
-    color: #fff;
 }
 
-.wrap .name {
-    font-weight: 500;
-    font-size: 2rem;
-    padding-top: 0;
+.card {
+    color: #fff;
+    font-weight: bold;
+
+    min-width: 300px;
+    min-height: 300px;
+
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+}
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contacts__title {
+    padding: 10px 0;
+}
+.contact {
+    padding-bottom: 5px;
 }
